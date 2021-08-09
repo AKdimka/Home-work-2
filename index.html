@@ -9,11 +9,9 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -22,110 +20,133 @@
 <body>
 	<!-- верхняя линия -->
 	<header>
-		<nav class="nav">
-			<a lang="eng" class="nav__logo" href="./index.html"><span class="logo-1">Web</span>Studio</a>
-			<ul>
-				<li><a class="nav__link-1" href="./index.html">Студия</a></li>
-				<li><a class="nav__link-2" href="./portfolio.html">Портфолио</a></li>
-				<li><a class="nav__link-3" href="./index.html">Контакты</a></li>
-			</ul>
-
-			<ul>
-				<li><a class="nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a class="nav__tel" href="tel:+380961111111">+38 (096) 111 11 11</a></li>
+		<nav>
+			<a class="nav__logo" href="./index.html"><span class="logo-1">Web</span>Studio</a>
+			<ul class="nav">
+				<li class="nav-item"><a class="nav__link current" href="./index.html">Студия</a></li>
+				<li class="nav-item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+				<li class="nav-item"><a class="nav__link" href="./index.html">Контакты</a></li>
 			</ul>
 		</nav>
+
+		<ul class="contacts">
+			<li class="contacts-item"><a class="nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+			<li class="contacts-item"><a class="nav__tel" href="tel:+380961111111">+38 (096) 111 11 11</a></li>
+		</ul>
 	</header>
 
 	<main>
 		<!-- Шапка -->
-		<section class="hat">
+		<section class="hero-section">
 			<!-- Герой -->
-			<h1 class="hat__hero">Эффективные решения для вашего бизнеса</h1>
-			<button type="button" class="hut__service">Заказать услугу</button>
+			<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+			<button type="button" class="hero-button">Заказать услугу</button>
 		</section>
 
 		<!-- Особенности -->
-		<section>
-			<h2>Особенности</h2>
+		<section class="features-section">
+			<h2 class="title-hiden">Особенности</h2>
 			<ul class="features">
-				<li>
-					<h3 class="features__title-1">Внимание к деталям</h3>
-					<p class="features__text-1">Идейные соображения, а также начало повседневной работы по формированию
+				<li class="features-item">
+					<img class="features-img" src="./images/features/antenna.svg" height="70" width="70" alt="антена">
+					<h3 class="features__title">Внимание к деталям</h3>
+					<p class="features__text">Идейные соображения, а также начало повседневной работы по формированию
 						позиции.</p>
 				</li>
-				<li>
-					<h3 class="features__title-2">Пунктуальность</h3>
-					<p class="features__text-2">Задача организации, в особенности же рамки и место обучения кадров влечет за
+				<li class="features-item">
+					<img class="features-img" src="./images/features/clock.svg" height="70" width="70" alt="часы">
+					<h3 class="features__title">Пунктуальность</h3>
+					<p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
 						собой.</p>
 				</li>
-				<li>
-					<h3 class="features__title-3">Планирование</h3>
-					<p class="features__text-3">Равным образом консультация с широким активом в значительной степени
+				<li class="features-item">
+					<img class="features-img" src="./images/features/diagram.svg" height="70" width="70" alt="диаграмма">
+					<h3 class="features__title">Планирование</h3>
+					<p class="features__text">Равным образом консультация с широким активом в значительной степени
 						обуславливает.</p>
 				</li>
-				<li>
-					<h3 class="features__title-4">Современные технологии</h3>
-					<p class="features__text-4">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+				<li class="features-item">
+					<img class="features-img" src="./images/features/astronaut.svg" height="70" width="70" alt="астронавт">
+					<h3 class="features__title">Современные технологии</h3>
+					<p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
 					</p>
 				</li>
 			</ul>
 		</section>
 
 		<!-- Чем мы занимаемся -->
-		<section>
-			<h2 class="skills-title">Чем мы занимаемся</h2>
-			<ul>
-				<li>
-					<img class="skill-1" src="./images/img.jpg" width="370" alt="Десктопная разработка">
-
+		<section class="skill-section">
+			<h2 class="skill-title">Чем мы занимаемся</h2>
+			<ul class="skill">
+				<li class="skill-item">
+					<img class="skill-img" src="./images/img.jpg" height="294" width="370" alt="Десктопная разработка">
 				</li>
-				<li>
-					<img class="skill-2" src="./images/img-1.jpg" width="370" alt="Мобильная разработка">
-
+				<li class="skill-item">
+					<img class="skill-img" src="./images/img-1.jpg" height="294" width="370" alt="Мобильная разработка">
 				</li>
-				<li>
-					<img class="skill-3" src="./images/img-2.jpg" width="370" alt="Дизайнерские решения">
-
+				<li class="skill-item">
+					<img class="skill-img" src="./images/img-2.jpg" height="294" width="370" alt="Дизайнерские решения">
 				</li>
 			</ul>
 		</section>
 
 		<!-- Наша команда -->
-		<section class="workers">
+		<section class="workers-section">
 			<h2 class="workers__title">Наша команда</h2>
-			<ul>
-				<li class="workers__card-1">
-					<img src="./images/workers/img-3.jpg" width="270" alt="Фото Игоря Демьяненко">
-					<h3 class="workers__name-card">Игорь Демьяненко</h3>
+			<ul class="workers">
+				<li class="workers__card">
+					<img src="./images/workers/img-3.jpg" height="260" width="270" alt="Фото Игоря Демьяненко">
+					<h3 class="workers__card-title">Игорь Демьяненко</h3>
 					<p class="workers__card-text">Product Designer</p>
 				</li>
-				<li class="workers__card-2">
-					<img src="./images/workers/img-4.jpg" width="270" alt="Фото Ольги Репиной">
-					<h3 class="workers__name-card">Ольга Репина</h3>
+				<li class="workers__card">
+					<img src="./images/workers/img-4.jpg" height="260" width="270" alt="Фото Ольги Репиной">
+					<h3 class="workers__card-title">Ольга Репина</h3>
 					<p class="workers__card-text">Frontend Developer</p>
 				</li>
-				<li class="workers__card-3">
-					<img src="./images/workers/img-5.jpg" width="270" alt="Фото Николая Тарасова">
-					<h3 class="workers__name-card">Николай Тарасов</h3>
+				<li class="workers__card">
+					<img src="./images/workers/img-5.jpg" height="260" width="270" alt="Фото Николая Тарасова">
+					<h3 class="workers__card-title">Николай Тарасов</h3>
 					<p class="workers__card-text">Marketing</p>
 				</li>
-				<li class="workers__card-4">
-					<img src="./images/workers/img-6.jpg" width="270" alt="Фото Михаила Ермакова">
-					<h3 class="workers__name-card">Михаил Ермаков</h3>
+				<li class="workers__card">
+					<img src="./images/workers/img-6.jpg" height="260" width="270" alt="Фото Михаила Ермакова">
+					<h3 class="workers__card-title">Михаил Ермаков</h3>
 					<p class="workers__card-text">UI Designer</p>
 				</li>
 			</ul>
+		</section>
+
+		<!-- Постоянные клиенты -->
+		<section class="client-section">
+			<h2 class="client-title">Постоянные клиенты</h2>
+			<ul>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo.svg" height="60" width="106"
+						alt="логотип"></li>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo-1.svg" height="60" width="106"
+						alt="логотип"></li>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo-2.svg" height="60" width="106"
+						alt="логотип"></li>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo-3.svg" height="60" width="106"
+						alt="логотип"></li>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo-4.svg" height="60" width="106"
+						alt="логотип"></li>
+				<li class="client-item"><img class="client-img" src="./images/clients/Logo-5.svg" height="60" width="106"
+						alt="логотип"></li>
+			</ul>
+
 		</section>
 	</main>
 
 	<!-- Подвал -->
 	<footer>
 		<a class="footer-logo" href="./index.html"><span class="logo-1">Web</span>Studio</a>
-		<address class="address">
-			г. Киев, пр-т Леси Украинки, 26
-			<a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
-			<a class="footer__tel" href="tel:+380991111111">+38 (099) 111 11 11</a>
+		<address>
+			<ul class="address">
+				<li>г. Киев, пр-т Леси Украинки, 26</li>
+				<li><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></li>
+				<li><a class="footer__tel" href="tel:+380991111111">+38 (099) 111 11 11</a></li>
+			</ul>
 		</address>
 	</footer>
 
