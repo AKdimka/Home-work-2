@@ -86,7 +86,7 @@ body {
 .hero-section {
 	width: 1600px;
 	height: 600px;
-	background: url(/images/bg/bg.jpg);
+	background: url(./images/bg/bg.jpg);
 }
 .hero-title {
 	font-weight: 900;
