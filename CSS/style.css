@@ -15,6 +15,7 @@ ul li {
 	--secondary-text-color: #212121;
 	--bg-color: #ffffff;
 	--secondary-bg: #2f303a;
+	--third-bg: #f5f4fa;
 }
 
 body {
@@ -25,9 +26,11 @@ body {
 }
 
 /* -------Хедер------- */
-nav {
-	height: 80px;
+.header-section {
+	width: 1600px;
 	padding: 0 215px;
+
+	background: var(--bg-color);
 }
 .nav__logo,
 .footer-logo {
@@ -38,75 +41,77 @@ nav {
 	line-height: 1.19;
 	color: var(--secondary-text-color);
 }
-
 .nav__logo {
-	margin-top: 24px;
+	margin: 24px 0 0 15px;
 }
+
 .logo-1 {
 	color: var(--brand-color);
 }
-
 .nav {
+	display: inline;
 	margin-left: 93px;
-	letter-spacing: 0.02em;
 }
-
 .nav-item {
 	display: inline-block;
-	margin-right: 50px;
-}
-
-.contacts-item {
-	display: inline-block;
+	margin: 32px 50px 0 0;
 }
 .nav__link {
 	font-weight: 500;
-	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
 	color: var(--secondary-text-color);
+}
+.contacts {
+	display: inline;
+	margin: 32px 0 0 231px;
+}
+.contacts-item {
+	display: inline-block;
+	padding: 0 0 0 50px;
+}
+.contacts-link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	color: var(--primery-text-color);
 }
 .current {
 	color: var(--brand-color);
-}
-.nav__mail,
-.nav__tel {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-
-	color: var(--primery-text-color);
 }
 
 /* -------Герой------- */
 .hero-section {
 	width: 1600px;
-	padding: 200px 0;
-	background: var(--secondary-bg);
+	height: 600px;
+	background: url(/images/bg/bg.jpg);
 }
 .hero-title {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 1.36;
-	margin: 0 452px 40px 452px;
+	line-height: 60px;
+	padding: 200px 452px 0 452px;
 
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 
-	color: #ffffff;
+	color: var(--bg-color);
 }
 .hero-button {
-	height: 50px;
 	width: 200px;
-	font-weight: bold;
+	height: 50px;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.9;
 	margin: 0 700px;
 
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.06em;
 
-	color: #ffffff;
+	color: var(--bg-color);
+
 	background: var(--brand-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
@@ -116,130 +121,170 @@ nav {
 .features-section {
 	padding: 94px 200px 0 200px;
 }
+.title-hiden {
+	display: none;
+}
 .features {
-	font-size: 0.1em;
 }
 .features-item {
 	display: inline-block;
 	width: 270px;
-	height: 101px;
-	margin: 0 15px;
+	height: 251px;
+	margin: 0 15px 0 15px;
 }
 .features-img {
 	padding: 25px 100px;
-	background: #f5f4fa;
+
+	background: var(--third-bg);
+	border-radius: 4px;
 }
 .features__title {
-	margin-top: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+
+	margin: 30px 0 0 0;
+
 	color: var(--secondary-text-color);
 }
-
 .features__text {
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: 24px;
+
+	margin: 10px 0 0 0;
 }
 
-/* --------Чем мы занимаемся-------- */
+/* -------Чем мы занимаемся------- */
 .skill-section {
-	padding: 94px 200px;
+	padding: 94px 200px 94px 200px;
 }
-
 .skill-title {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
+
 	color: var(--secondary-text-color);
 }
-
+.skill {
+}
 .skill-item {
 	display: inline-block;
-	margin: 15px;
+	margin: 0 15px;
+}
+.skill-img {
 }
 
 /* -------Наша команда------- */
 .workers-section {
-	padding: 94px 200px;
-	background: #f5f4fa;
-}
+	padding: 94px 200px 94px 200px;
 
+	background: var(--third-bg);
+}
 .workers__title {
-	display: block;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
+
 	color: var(--secondary-text-color);
+}
+.workers {
 }
 .workers__card {
 	display: inline-block;
-	margin: 50px 15px 0 15px;
-	background: #ffffff;
+	margin: 0 15px 0 15px;
+
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-
 .workers__card-title {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.9;
-	margin: 30px 0px 10px 68px;
+	line-height: 1.2;
+	text-align: center;
 
 	color: var(--secondary-text-color);
 }
 .workers__card-text {
+	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.9;
+	line-height: 1.19;
 	text-align: center;
 }
 
-/* -------Постоянные клиенты------- */
+/* -------Наши клиенты------- */
 .client-section {
-	padding: 94px 200px;
+	margin: 0 200px;
 }
 .client-title {
+	font-weight: 700;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: 1.16;
 	text-align: center;
-	letter-spacing: 0.03em;
+
+	margin: 94px 0 0 0;
+
 	color: var(--secondary-text-color);
 }
 .client-item {
 	display: inline-block;
-	width: 170px;
-	height: 92px;
 	margin: 50px 15px 0 15px;
 
-	border: 1px solid #afb1b8;
 	padding: 16px 32px;
+	border: 1px solid #afb1b8;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
 .client-img {
 }
-/* -----------Конец главной----------- */
 
-/* -----------Портфолио----------- */
+/* -------Подвал------- */
+.footer-section {
+	width: 1600px;
+	height: 252px;
+
+	margin: 94px 0 0 0;
+	padding: 0 215px;
+
+	background: var(--secondary-bg);
+}
+.footer-logo {
+	margin: 60px 0 0 0;
+}
+.address {
+	margin: 20px 0 0 -40px;
+}
+.address-street {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+
+	color: var(--bg-color);
+}
+.address-item {
+	margin: 9px 0 0 0;
+}
+.address-link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* --------------Портфолио-------------- */
 /* -------Фильтр------- */
-.title-hiden {
-	visibility: hidden;
-}
-
 .filter-section {
-	display: block;
-	margin: 94px 490px 0 490px;
+	margin: 0 491px;
 }
-
 .filter-item {
 	display: inline-block;
-	margin: 4px;
+	margin: 94px 4px 0 4px;
 }
-
 .filter__all,
 .filter__web,
 .filter__app,
@@ -250,114 +295,75 @@ nav {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
+
 	text-align: center;
 	color: var(--secondary-text-color);
 
-	background: #f5f4fa;
+	background: var(--third-bg);
 	border-radius: 4px;
 }
 
-/* -------Проекты------- */
+/* -------Проэкты------- */
 .projects-section {
-	display: block;
-	padding: 50px 200px 94px 200px;
+	padding: 0 200px 0 200px;
 }
-
 .project-item {
 	display: inline-block;
-	width: 370px;
-	margin: 15px;
+	padding: 50px 15px 0 15px;
+}
+.project-link {
 }
 .project-title {
-	display: block;
-	margin: 20px 0 4px 24px;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
+
 	letter-spacing: 0.06em;
+
 	color: var(--secondary-text-color);
 }
 .project-text {
-	display: block;
-	margin-left: 24px;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.9;
+
+	color: var(--primery-text-color);
 }
-
-/* -----------Конец мейн портфолио----------- */
-
-/* -----------Подвал----------- */
-footer {
-	height: 252px;
-	width: 1600px;
-	background: var(--secondary-bg);
-	padding-left: 215px;
-}
-
-.footer-logo {
-	margin: 60px 0 0 0;
-}
-
-.address {
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	margin: 20px 0 0 0;
-
-	color: #ffffff;
-}
-
-.footer__mail,
-.footer__tel {
-	display: block;
-	margin-top: 9px;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.7;
-
-	color: rgba(255, 255, 255, 0.6);
-}
-/* --------------Конец подвал--------------*/
 
 /* -------При наведении------- */
-.nav__link:hover,
-.nav__mail:hover,
-.nav__tel:hover,
-.footer__mail:hover,
-.footer__tel:hover {
-	color: var(--brand-color);
-}
-
 .filter__all:hover,
 .filter__web:hover,
 .filter__app:hover,
 .filter__design:hover,
 .filter__marketing:hover {
-	padding: 6px 22px;
-	color: #ffffff;
+	color: var(--bg-color);
 	background: var(--brand-color);
+
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
-/* -------------------- */
 
-/* -------Фокус------- */
-.nav__link:focus,
-.nav__mail:focus,
-.nav__tel:focus,
-.footer__mail:focus,
-.footer__tel:focus {
+.nav__link:hover,
+.contacts-link:hover,
+.address-link:hover {
 	color: var(--brand-color);
 }
 
+/* -------При фокусе------- */
 .filter__all:focus,
 .filter__web:focus,
 .filter__app:focus,
 .filter__design:focus,
 .filter__marketing:focus {
-	color: #ffffff;
+	color: var(--bg-color);
 	background: var(--brand-color);
+
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
-/* ---------------------------- */
+
+.nav__link:focus,
+.contacts-link:focus,
+.address-link:focus {
+	color: var(--brand-color);
+}
