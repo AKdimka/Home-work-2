@@ -85,6 +85,7 @@ body {
 	color: var(--bg-color);
 }
 .hero-button {
+	font-family: "roboto", sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.9;
@@ -230,6 +231,7 @@ body {
 .filter__design,
 .filter__marketing {
 	cursor: pointer;
+	font-family: "roboto", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
